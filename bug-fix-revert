@@ -1,0 +1,32 @@
+COMMAND:
+curl -s https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/<YOUR_PULL_REQUEST_NUMBER>
+
+# Alternatively, authenticated request:
+# curl -s -H "Authorization: token <YOUR_GITHUB_TOKEN>" https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/<YOUR_PULL_REQUEST_NUMBER>
+
+OUTPUT:
+# NOTE: This output requires your personal Pull Request number submitted to the upstream repository.
+# Once you create a Pull Request on GitHub from your forked repository:
+# 1. Replace <YOUR_PULL_REQUEST_NUMBER> in the command above with your PR number.
+# 2. Run the command in your terminal.
+# 3. Paste the returned JSON output below.
+#
+# The API response will verify:
+#   "head": {
+#       "repo": {
+#           "full_name": "<YOUR_GITHUB_USERNAME>/<YOUR_FORKED_REPO_NAME>",
+#           "fork": true
+#       }
+#   },
+#   "base": {
+#       "repo": {
+#           "full_name": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub"
+#       }
+#   }
+HEAD:
+Prathameshjorve/Getting-Started-with-Git-and-GitHub
+bug-fix-revert
+
+BASE:
+ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
+main
